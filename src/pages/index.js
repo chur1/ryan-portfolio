@@ -1,13 +1,14 @@
 import React from "react";
-import styles from "../styles/index/index.module.scss";
+import styles from "src/styles/index/index.module.scss";
 import ImageDescriptionLeft from "../components/title-description/ImageDescriptionLeft";
 
-const ManExpeditions = {
-  image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
-  text: "hello!"
-}
-
 const Index = () => {
+
+  const ManExpeditions = {
+    image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
+    text: "hello!"
+  }
+
   return(
       <div>
         <div className={styles["background"]}>
