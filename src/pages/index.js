@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/index/Index.module.scss";
+import styles from "./Index.module.scss";
 import ImageDescriptionLeft from "../components/title-description/ImageDescriptionLeft";
 
 const Index = () => {
