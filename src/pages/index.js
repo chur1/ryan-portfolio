@@ -14,7 +14,7 @@ const Index = () => {
           <h1 className={styles["firstLine"]}>Hello, My Name Is Ryan!</h1>
         </div>
         <div>
-          <ImageDescriptionLeft {...ManExpeditions} />
+          <ImageDescriptionLeft {...ManExpeditions} priority={true} />
         </div>
       </div>
   )
