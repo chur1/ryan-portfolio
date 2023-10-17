@@ -1,14 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-
+import styles from "./ImageDescriptionLeft.module.scss";
 
 const ImageDescriptionLeft = ({    
     image,
     text
 }) => {
     return(
-        <div>
-            <div>
+        <div className={styles['whole-container']}>
+            <div className={styles['image']}>
                 <Image
                     alt="image"
                     src={image}
@@ -16,8 +16,8 @@ const ImageDescriptionLeft = ({
                     height={200}
                 />
             </div>
-            <div>
-                <h1>{text}</h1>
+            <div className={styles['description']}>
+                <h4 className={styles['text']}>{text}</h4>
             </div>
         </div>
         

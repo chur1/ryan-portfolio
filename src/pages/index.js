@@ -6,7 +6,7 @@ const Index = () => {
 
   const ManExpeditions = {
     image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
-    text: "hello!"
+    text: "hi! \n i'm ryan, this is my portfolio :)"
   }
 
   return(
