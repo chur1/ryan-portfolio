@@ -1,10 +1,17 @@
 import React from "react";
 import styles from "./Index.module.scss";
-import ImageDescriptionLeft from "../components/title-description/ImageDescriptionLeft";
+import ImageDescriptionLeft from "../components/title-description/ImageDescription";
 
 const Index = () => {
 
   const ManExpeditions = {
+    orientation: "left",
+    image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
+    text: "hi! \n i'm ryan, this is my portfolio :)"
+  }
+  
+  const SkyIT = {
+    orientation: "right",
     image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
     text: "hi! \n i'm ryan, this is my portfolio :)"
   }
@@ -16,6 +23,7 @@ const Index = () => {
         </div>
         <div>
           <ImageDescriptionLeft {...ManExpeditions} priority={true} />
+          <ImageDescriptionLeft {...SkyIT} priority={true} />
         </div>
       </div>
   )

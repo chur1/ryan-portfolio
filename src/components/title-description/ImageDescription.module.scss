@@ -1,0 +1,39 @@
+.left-whole-container{
+    display: flex;
+    justify-content: left;
+}
+
+.left-image{
+    padding: 20px;
+    background: #C3B27F28;
+}
+
+.left-description{
+    margin-left: 1rem;
+}
+
+.left-text{
+    color: #000;
+    font-weight: 330;
+}
+
+// right orientation
+
+.right-whole-container{
+    display: flex;
+    justify-content: right;
+}
+
+.right-image{
+    padding: 20px;
+    background: #C3B27F28;
+}
+
+.right-description{
+    margin-right: 1rem;
+}
+
+.right-text{
+    color: #000;
+    font-weight: 330;
+}
