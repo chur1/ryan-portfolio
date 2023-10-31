@@ -1,9 +1,57 @@
-.firstLine{
+// texts
+.header{
+    // color: #000;
+    // font-style: normal;
+    // font-weight: 300;
+    // line-height: normal;
     color: #000;
+    // font-family: Crimson Text;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 250;
     line-height: normal;
+}
+
+.intro-position{
     text-align: center;
     margin-top: 2.5rem;
 }
 
+.some-work-position{
+    text-align: right;
+    margin-top: 4rem;
+}
+
+// images
+.imageLargeDiv{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.imageLarge{
+    padding: 20px;
+    background: #ede7d8;
+}
+
+.imageCards{
+    margin-top: 2rem;
+    // background-color: #e1d8bf;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+// individual cards
+.imageCard{
+    margin-bottom: 2rem;
+    justify-content: left;
+    :hover{
+        background-color: #f3efe5;
+        border-radius: 1rem;
+    }  
+}
+
+.cardContent{
+    padding: 2rem;
+}
