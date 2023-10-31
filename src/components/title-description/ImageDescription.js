@@ -10,18 +10,19 @@ const ImageDescription = ({
     if(orientation == "left"){
         return(
             <div className={styles['left-whole-container']}>
-            <div className={styles['left-image']}>
-                <Image
-                    alt="image"
-                    src={image}
-                    width={200}
-                    height={200}
-                />
+                <div className={styles['left-image']}>
+                    <Image
+                        className={styles['Image']}
+                        alt="image"
+                        src={image}
+                        width={200}
+                        height={200}
+                    />
+                </div>
+                <div className={styles['left-description']}>
+                    <h4 className={styles['left-text']}>{text}</h4>
+                </div>
             </div>
-            <div className={styles['left-description']}>
-                <h4 className={styles['left-text']}>{text}</h4>
-            </div>
-        </div>
         )
     }
     if (orientation == "right")
@@ -32,6 +33,7 @@ const ImageDescription = ({
                 </div>
                 <div className={styles['right-image']}>
                     <Image
+                        className={styles['Image']}
                         alt="image"
                         src={image}
                         width={200}
