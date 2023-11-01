@@ -14,7 +14,6 @@ export default async function handler(req, res) {
             const start = parseInt(parts[0], 10);
             const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1;
             const chunkSize = end - start + 1;
-            const file = fs.createReadStream(videoPath, { start, end });
 
             // Set headers to enable autoplay and looping
             res.writeHead(206, {
@@ -27,7 +26,8 @@ export default async function handler(req, res) {
                 'Expires': 0,
             });
 
-            file.pipe(res);
+            const fileStream = fs.createReadStream(videoPath, { start, end });
+            fileStream.pipe(res);
         } else {
             // Set headers to enable autoplay and looping
             res.writeHead(200, {
@@ -38,7 +38,8 @@ export default async function handler(req, res) {
                 'Expires': 0,
             });
 
-            fs.createReadStream(videoPath).pipe(res);
+            const fileStream = fs.createReadStream(videoPath);
+            fileStream.pipe(res);
         }
     } catch (err) {
         console.error(err);
