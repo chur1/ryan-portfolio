@@ -7,10 +7,10 @@ import { Container } from 'react-bootstrap';
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Navigation />
-      <Container>
+        <div class="NavigationPositioning">
+          <Navigation />
+        </div>
         <Component {...pageProps} />
-      </Container>
     </>
   );
 }

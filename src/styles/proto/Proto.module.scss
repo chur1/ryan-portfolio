@@ -1,18 +1,8 @@
-// .first-page{
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .hi{
-//     text-align: center;
-// }
 .backgroundVideo{
-    position: absolute; /* Fixed position to cover the entire viewport */
-    top: 0;
-    left: 0;
+    position: relative; /* Fixed position to cover the entire viewport */
     width: 100%; /* Full width */
     height: 100vh; /* Full height */
-    z-index: -100000;
+    z-index: -999999;
     overflow: hidden; /* Hide overflow content */
   
     /* Center the video within the container */
@@ -26,7 +16,13 @@
     height: 100%; /* Maintain the aspect ratio of the video */
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
 }
+
+// .page-container{
+//     display: flex;
+//     flex-direction: column;
+// }
 
 .hello_text{
     color: white;
@@ -38,7 +34,15 @@
     text-align: center; /* Center text content horizontally */
 }
 
+.second-page{
+    width: 100vw;
+    height: 100vh;
+}
 .hello{
-    position: absolute;
-    top: 200%;
+    position: relative;
+    top: 45vh;
+    display: flex;
+    justify-content: center;
+    padding: 100;
+    
 }

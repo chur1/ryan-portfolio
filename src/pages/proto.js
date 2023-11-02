@@ -29,17 +29,19 @@ const Proto = () => {
 
 return (
     <>
-        <section className={styles['first-page']}>
-            <div className={styles['backgroundVideo']}>
-                <video className={styles['jacko']} id="backgroundVideo" src={"/videos/Sequence_01.mp4"} autoPlay muted loop/>
-            </div>
-            <h1 className={styles['hello_text']}>Hello, My Name is Ryan _</h1>
-        </section>
-        <section>
-            <div>
-                <h1 className={styles['hello']}>hello</h1>
-            </div>
-        </section>
+        <div className={styles['page-container']}>
+            <section className={styles['first-page']}>
+                <div className={styles['backgroundVideo']}>
+                    <video className={styles['jacko']} id="backgroundVideo" src={"/videos/Sequence_01.mp4"} autoPlay muted loop/>
+                </div>
+                <h1 className={styles['hello_text']}>Hello, My Name is Ryan _</h1>
+            </section>
+            <section className={styles['second-page']}>
+                <div>
+                    <h1 className={styles['hello']}>hello</h1>
+                </div>
+            </section>
+        </div>
     </>
 );
 }
