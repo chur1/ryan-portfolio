@@ -32,7 +32,7 @@ return (
         <div className={styles['page-container']}>
             <section className={styles['first-page']}>
                 <div className={styles['backgroundVideo']}>
-                    <video className={styles['jacko']} id="backgroundVideo" src={"/videos/Sequence_01.mp4"} autoPlay muted loop/>
+                    <video className={styles['jacko']} id="backgroundVideo" src={"/videos/Sequence_01.mp4"} autoplay loop muted playsinline/>
                 </div>
                 <h1 className={styles['hello_text']}>Hello, My Name is Ryan!</h1>
                 <h5 className={styles['scroll-down-text']}>\/</h5>
