@@ -26,7 +26,7 @@
 
 .hello_text{
     color: white;
-    font-size: 4rem;
+    // font-size: 4rem;
     position: absolute; /* Fixed position to center within the viewport */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
@@ -35,6 +35,7 @@
 }
 
 .scroll-down-text{
+    color: white;
     position: absolute; /* Fixed position to center within the viewport */
     top: 95%; /* Center vertically */
     left: 50%; /* Center horizontally */

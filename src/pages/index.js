@@ -35,7 +35,7 @@ return (
                     <video className={styles['jacko']} id="backgroundVideo" src={"/videos/Sequence_01.mp4"} autoPlay muted loop/>
                 </div>
                 <h1 className={styles['hello_text']}>Hello, My Name is Ryan!</h1>
-                <h5 className={styles['scroll-down-text']}>Scroll Down</h5>
+                <h5 className={styles['scroll-down-text']}>\/</h5>
             </section>
             <section className={styles['second-page']}>
                 <div>
