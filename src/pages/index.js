@@ -1,46 +1,50 @@
-import React from "react";
-import styles from "./Index.module.scss";
-import ImageDescription from "../components/title-description/ImageDescription";
+import React, { useEffect } from "react";
+import styles from "../styles/index/index.module.scss";
+import Navigation from "../components/shared/navigation/Navigation";
 
-const Index = () => {
-
-  const ManExpeditions = {
-    orientation: "left",
-    image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-  }
-  
-  const SkyIT = {
-    orientation: "right",
-    image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-  }
-
-  return(
-      <div>
-        <div className={styles["intro-position"]}>
-          <h1 className={styles["header"]}>Hello, My Name Is Ryan!</h1>
-        </div>
-        <div className={styles["imageLargeDiv"]}>
-          <img src="https://i.ibb.co/8mVmKPD/DSC1126.jpg" alt="" className={styles['imageLarge']} />
-        </div>
-        <div className={styles["some-work-position"]}>
-          <h1 className={styles['header']}>Here's some of my work...</h1>
-        </div>
-        <div className={styles['imageCards']}>
-          <div className={styles['imageCard']}>
-            <div className={styles['cardContent']}>
-              <ImageDescription {...ManExpeditions} priority={true} />
-            </div>
-          </div>
-          <div className={styles['imageCard']}>
-            <div className={styles['cardContent']}>
-              <ImageDescription {...SkyIT} priority={true} />
-            </div>
-          </div>
-        </div>
-      </div>
-  )
+function setScrollVar() {
+    const htmlElement = document.documentElement;
+    const percentOfScreenHeightScrolled = htmlElement.scrollTop / htmlElement.clientHeight;
+    console.log(Math.min(percentOfScreenHeightScrolled));
+    htmlElement.style.setProperty("--scroll", `${Math.min(percentOfScreenHeightScrolled * 100, 100)}%`);
 }
 
-export default Index;
+
+const Proto = () => {
+
+    useEffect(() => {
+        // Add scroll and resize event listeners
+        window.addEventListener("scroll", setScrollVar);
+        window.addEventListener("resize", setScrollVar);
+    
+        // Initial call to setScrollVar to set the initial value
+        setScrollVar();
+    
+        // Cleanup the event listeners when the component unmounts
+        return () => {
+        window.removeEventListener("scroll", setScrollVar);
+        window.removeEventListener("resize", setScrollVar);
+        };
+    }, []);
+
+return (
+    <>
+        <div className={styles['page-container']}>
+            <section className={styles['first-page']}>
+                <div className={styles['backgroundVideo']}>
+                    <video className={styles['jacko']} id="backgroundVideo" src={"/videos/Sequence_01.mp4"} autoPlay muted loop/>
+                </div>
+                <h1 className={styles['hello_text']}>Hello, My Name is Ryan!</h1>
+                <h5 className={styles['scroll-down-text']}>Scroll Down</h5>
+            </section>
+            <section className={styles['second-page']}>
+                <div>
+                    <h1 className={styles['hello']}>Please Check Back Later :(</h1>
+                </div>
+            </section>
+        </div>
+    </>
+);
+}
+
+export default Proto;

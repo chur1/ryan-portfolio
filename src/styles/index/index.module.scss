@@ -2,7 +2,7 @@
     position: relative; /* Fixed position to cover the entire viewport */
     width: 100%; /* Full width */
     height: 100vh; /* Full height */
-    z-index: -999999;
+    z-index: -1;
     overflow: hidden; /* Hide overflow content */
   
     /* Center the video within the container */
@@ -29,6 +29,14 @@
     font-size: 4rem;
     position: absolute; /* Fixed position to center within the viewport */
     top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate back to center */
+    text-align: center; /* Center text content horizontally */
+}
+
+.scroll-down-text{
+    position: absolute; /* Fixed position to center within the viewport */
+    top: 95%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Translate back to center */
     text-align: center; /* Center text content horizontally */
