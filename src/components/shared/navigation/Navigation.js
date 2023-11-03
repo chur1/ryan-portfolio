@@ -10,7 +10,7 @@ function NavBar() {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end"> {/* Use justify-content-end to center and space items */}
         <Nav className={styles['nav-items']}>
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/proto">About</Nav.Link>
+          <Nav.Link href="#">About</Nav.Link>
           <Nav.Link href="#">Services</Nav.Link>
           <Nav.Link href="#">Contact</Nav.Link>
         </Nav>
