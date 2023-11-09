@@ -34,7 +34,7 @@ const Proto = () => {
         title: "Man Expeditions",
         image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
         date: "Aug 2020 - Sep 2020",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        text: "Using React.js to implement the UI and Node.js and Express, to store informations of profiles on MongoDB, we've created a system that allows administrators of Man Expeditions to easily filter and sort through applicants to their program and organize them into groups of individuals with similar interests."
     }
       
     const SkyIT = {
@@ -42,12 +42,23 @@ const Proto = () => {
         title: "SkyIT",
         image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
         date: "Mar 2023 - Sep 2023",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        text: "Joined the SkyIT team to assist project management for technology services aimed towards assisting the aviation fleet industry in overcoming modern challenges by maintaining, reviewing, and adjusting code and architecture (React/TypeScript). Implemented a variety of reusable React components to various projects - internal tool development, website revamp, and bespoke fleet management solutions for key partners like WestJet, Schlumberger, ATCO, and Fednav."
     }
+
     const DOE = {
         orientation: "left",
+        title: "United States Department of Energy",
+        date: "Aug 2020 - May 2020",
         image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        text: "Engineered and designed the first in its class “lighting calculator” for the United States Department of Energy.The application was used to store lighting metrics (spectral power distributions) to derive lighting qualities (TM30, CRI, color temperature, and etcetera) for commercial LEDs."
+    } 
+
+    const AUCAS = {
+        orientation: "left",
+        title: "American University",
+        date: "Aug 2022 - May 2023",
+        image: "https://i.ibb.co/Dkcvj1J/IMG-6221.jpg",
+        text: "Invented the idea and serialized a plan to create an American University exclusive networking application that puts emphasis on tangible projects that users want to feature. Instead of looking at an applicant’s experience when considering them for a role, find out who is behind an outstanding project and take a closer look at their profile."
     }
 
 return (
@@ -76,7 +87,7 @@ return (
                             <ImageDescription {...SkyIT} priority={true} />
                         </div>
                         <div>
-                            <ImageDescription {...DOE} priority={true} />
+                            <ImageDescription {...AUCAS} priority={true} />
                         </div>
                         <div>
                             <ImageDescription {...DOE} priority={true} />
