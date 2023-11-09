@@ -1,32 +1,228 @@
 .left-whole-container{
-    display: flex;
-    justify-content: left;
+    // display: flex;
+    // justify-content: left;
+    background-color:#47474780;
+    padding: 10px;
+    max-width: 70vw;
+    border-radius: 1rem;
+}
+
+.container-contents{
+    padding: 0rem;
 }
 
 .left-image{
-    padding: 20px;
-    background: #ede7d8 !important;
-    border-radius: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    align-items: center;
 }
+
+
 .Image{
-    border-radius: 0 !important;
+    height: 43px;
+    width: auto;
+    border-radius: 0.5rem !important;
+}
+
+.imageTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.title{
+    margin-left: 1rem;
+    font-weight: 300;
+    color: #FFFF;
+    // max-width: 80vw;
+}
+
+.date{
+    font-weight: 300;
+    color: #FFFF;
 }
 
 .left-description{
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    // right margin align with
+    margin-right: 1rem; 
+    margin-top: 1.5rem;
 }
 
 .left-text{
-    // color: #000;
-    // font-weight: 330;
-
-    color: #000;
-    // font-family: Crimson Text;
+    text-align: left;
+    color: white;
     font-size: 22px;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-    max-width: 50rem;
+    // max-width: 80vw;
+}
+
+@media screen and (max-width: 1676px) {
+    .left-whole-container{
+        max-width:80vw;
+    }
+    .title{
+        margin-left: 0.5rem;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .date{
+        margin-left: 0.5rem;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .left-text{
+        font-size: 20px;
+        font-weight: 200;
+    }       
+    .left-description{
+        margin-left: 1.2rem;
+        margin-top: 1rem;
+    }
+    .left-whole-container{
+        padding: 7px;
+    }
+    .Image{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .left-whole-container{
+        max-width:80vw;
+    }
+    .title{
+        margin-left: 0.5rem;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .date{
+        margin-left: 0.5rem;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .left-text{
+        font-size: 14px;
+        font-weight: 100;
+    }       
+    .left-description{
+        margin-left: 1.2rem;
+        margin-top: 1rem;
+    }
+    .left-whole-container{
+        padding: 7px;
+    }
+    .Image{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 811px) {
+    .title{
+        margin-left: 0.5rem;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .date{
+        margin-left: 0.5rem;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .left-text{
+        font-size: 14px;
+        font-weight: 100;
+    }       
+    .left-description{
+        margin-left: 1.2rem;
+        margin-top: 1rem;
+    }
+    .left-whole-container{
+        padding: 6px;
+    }
+    .Image{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .title{
+        margin-left: 0.5rem;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .left-image{
+        margin: 10px 10px;
+        align-items: center;
+    }
+
+    .date{
+        margin-left: 0.5rem;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .left-text{
+        font-size: 12px;
+        font-weight: 100;
+    }       
+    .left-description{
+        margin-left: 0.9rem;
+        margin-top: 0rem;
+    }
+    .left-whole-container{
+        padding: 6px;
+    }
+    .Image{
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title{
+        margin-left: 0.5rem;
+        font-size: 13px;
+        font-weight: 200;
+    }
+
+    .left-image{
+        margin: 10px 10px;
+        align-items: center;
+    }
+
+    .date{
+        margin-left: 0.5rem;
+        font-size: 13px;
+        font-weight: 200;
+    }
+
+    .left-text{
+        font-size: 11px;
+        font-weight: 100;
+    }       
+    .left-description{
+        margin-left: 0.9rem;
+        margin-top: 0rem;
+    }
+    .left-whole-container{
+        padding: 4px;
+        max-width: 90vw;
+
+    }
+    .Image{
+        height: 20px;
+    }
 }
 
 // right orientation
